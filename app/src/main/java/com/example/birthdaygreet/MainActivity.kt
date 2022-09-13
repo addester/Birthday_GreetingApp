@@ -2,6 +2,7 @@ package com.example.birthdaygreet
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
 
@@ -14,7 +15,7 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-    fun createBirthdayCard(view: android.view.View){
+    fun createBirthdayCard(view: View){
         val nameInput = findViewById<EditText>(R.id.nameInput)
         val name = nameInput.editableText.toString()
         val intent = Intent(this, BdayGreeting::class.java)
